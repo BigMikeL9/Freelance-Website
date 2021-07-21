@@ -1,0 +1,181 @@
+body{
+  margin: 0;
+  text-align: center; /* Centers everything on screen.
+                        Placed in the COINTAINER or PARENT element.
+                        element have to have 100% width (or Display:
+                        block/inline block) for it to do anything.*/
+  font-family: 'Nunito', sans-serif;
+}
+
+
+h1 {
+  margin: 90px auto 40px auto; /* you can use whatever margin units you want, your preference */
+  font-size: 5rem; /* 16px = 100% = 1rem */
+  /* width: 10%; /* Because the width is not 100%, this element (h1)
+                  will not be centerend by "Text-align: Center" in
+                  the "body" element. We'd have to use "margin: auto"
+                  IN THE H1 ELEMENT IT SELF or the element that
+                  the width is not set to 100% on, in order
+                  to center it  */
+  /* margin: 0 auto; */
+  font-family: 'Dancing Script', cursive;
+  color: #45b29a;
+}
+
+p {
+    color: #545454;
+    font-size: 1.1rem;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #1e836c;
+}
+
+h2 {
+  color: #45b29a;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0.8; /* the preffered way of specifying "line-height" is to set it without any units */
+  margin: 10px auto;
+}
+
+h3 {
+  color: #45b29a;
+  font-size: 1.7rem;
+  margin: 16px 0;
+}
+
+hr {
+    border: dotted #e0ebe8 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+
+.top-container {
+  background-color: #e0ebe8;
+  padding-top: 100px;
+  position: relative; /* This is line is so that the cloud images
+                          in this div (which their positions are
+                          set to "relative") are to be relative to
+                          THIS DIV CONTAINER and NOT the BODY
+                          container */
+  overflow: hidden;
+  height: 647px;
+}
+
+.profile {
+  margin: 100px auto 0 auto;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.contact-me {
+  width: 50%;
+  margin: 90px auto 0;
+  line-height: 2;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 20%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 45%;
+  left: 20%;
+}
+
+.land-art {
+  position: relative;
+  top: 70px;
+  overflow: hidden;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 75px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.img-size0 {
+  width: 10%;
+}
+
+.img-size1 {
+  width: 25%; /* this is now scaled down to the width of its parent "skill-row" */
+  float: left; /* we use float: left here to wrap the text around the image
+                  DONT use float for positioning. ONLY use it to wrap text arounf an image. */
+  margin-right: 40px;
+}
+
+.img-size2 {
+  width: 25%; /* this is now scaled down to the width of its parent "skill-row" */
+  float: right;
+  margin-left: 30px;
+}
+
+.LUL {
+  padding: 20px;
+}
+
+.LUL2 {
+  width: 80%;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.bottom-container {
+  background-color: #c5ded7;
+  padding: 2em 0 0;
+}
+
+.footer-link {
+  color: #11999E;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 40px;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.bottom-container p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 0.9rem;
+  padding: 20px 0 10px 0;
+}
+
+
+.btn {
+    font-size: .8em;
+   text-align: center;
+   display: block;
+   position: relative;
+   background: #45b29a;
+   padding: .75em 1em .75em 1em;
+   color: white;
+   text-decoration: none;
+   margin: 2.5rem auto 4rem;
+   border-radius: 3px;
+   font-weight: 400;
+   border: 0;
+   font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+   text-transform: uppercase;
+   width: 25%;
+}
+
+.btn:hover {
+  background-color: #39a6a3;
+}
